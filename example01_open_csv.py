@@ -30,10 +30,12 @@ print(nestedLists, '\n')
 # Which is the largest list in nestedLists? 
 the_largest = max(nestedLists, key=len)
 print(*the_largest, '\n')
+
 # How many days were measured?
-# print(len(the_largest))
+print('Temperatures were recorded across ' + str(len(the_largest)) + ' days' + '\n')
+
 # What the hottest temp on this particular record?
-# print(max(the_largest))
+print('The hottest temp recorded was ' + str(max(the_largest)) + '\n')
 
 # What are the hottest 3 consecutive days? 
 # You can iterate via list comprehensions but I find for loops to make more sense
